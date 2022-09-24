@@ -17,4 +17,9 @@ export class ProductsService {
         const response = await this.productModel.find().exec();
         return response;
     }
+
+    async find(id: string): Promise<Product> {
+        const response = await this.productModel.findById(id).exec();
+        return response;
+    }
 }

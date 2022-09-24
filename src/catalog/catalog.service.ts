@@ -13,4 +13,8 @@ export class CatalogService {
     findAll() {
         return this.productsService.findAll();
     }
+
+    getOne(id: string) {
+        return this.productsService.find(id);
+    }
 }

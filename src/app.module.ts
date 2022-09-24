@@ -7,7 +7,7 @@ import { ProductsService } from './products/products.service';
 import { Product, ProductSchema } from './products/schemas/product.schema';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb+srv://localhost:27017/db'),
+  imports: [MongooseModule.forRoot('mongodb+srv://mikeask_user:<password>@cluster0.m49ob.mongodb.net/barle-db'),
   MongooseModule.forFeature([{ name: Product.name, schema: ProductSchema }])
   ],
   controllers: [CatalogController],
